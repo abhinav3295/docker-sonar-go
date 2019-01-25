@@ -13,7 +13,7 @@ RUN apk update && \
     pip3 install --upgrade pip pylint setuptools && \
     apk del .build-deps
 
-ARG SCANNER_VER
+ARG SCANNER_VER=3.3.0.1492
 
 ENV DOWNLOAD_URL="https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-${SCANNER_VER}.zip"
 
